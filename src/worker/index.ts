@@ -40,7 +40,7 @@ export default {
         await page.goto('https://demo.playwright.dev/movies');
     
         // if search is a multi-step action, stagehand will return an array of actions it needs to act on
-        const actions = await page.observe('Search for "Furiosa"');
+        const actions = await page.observe('Search for "Alien Romulus"');
         for (const action of actions)
           await page.act(action);
 
